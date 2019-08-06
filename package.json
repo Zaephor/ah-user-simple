@@ -36,6 +36,7 @@
     "node": ">=10.0.0"
   },
   "peerDependencies": {
+    "@zaephor-ah/ah-auth-plugin": "^0.3.1",
     "@zaephor-ah/ah-knex-plugin": "^0.2.2",
     "@zaephor-ah/ah-objection-plugin": "^0.0.7",
     "@zaephor-ah/ah-session-plugin": "^0.2.3",
