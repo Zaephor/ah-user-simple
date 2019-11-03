@@ -37,28 +37,28 @@
   },
   "peerDependencies": {
     "@zaephor-ah/ah-auth-plugin": "^0.3.1",
-    "@zaephor-ah/ah-knex-plugin": "^0.2.2",
+    "@zaephor-ah/ah-knex-plugin": "^0.2.3",
     "@zaephor-ah/ah-objection-plugin": "^0.0.7",
     "@zaephor-ah/ah-session-plugin": "^0.2.3",
-    "actionhero": ">=19.2.1"
+    "actionhero": ">=20.0.0"
   },
   "dependencies": {
-    "validator": "^11.1.0"
+    "validator": "^12.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "@commitlint/prompt-cli": "^8.1.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/prompt-cli": "^8.2.0",
     "@zaephor-ah/ah-auth-plugin": "^0.3.1",
-    "@zaephor-ah/ah-knex-plugin": "^0.2.2",
+    "@zaephor-ah/ah-knex-plugin": "^0.2.3",
     "@zaephor-ah/ah-objection-plugin": "^0.0.7",
     "@zaephor-ah/ah-session-plugin": "^0.2.3",
-    "actionhero": ">=19.2.1",
+    "actionhero": ">=20.0.0",
     "chai": "latest",
     "husky": "latest",
-    "lint-staged": "^9.2.1",
+    "lint-staged": "^9.4.2",
     "mocha": "latest",
-    "sqlite3": "^4.0.9",
+    "sqlite3": "^4.1.0",
     "standard": "latest",
     "standard-version": "^7.0.0"
   },
