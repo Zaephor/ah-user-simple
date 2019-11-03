@@ -28,7 +28,7 @@ exports.UserRegister = class UserRegister extends Action {
           return ('' + param).toLowerCase()
         },
         validator: (param, connection, actionTemplate) => {
-          if (param && api.config['ah-user-simple'].domain.enabled !== true) { throw new Error(`Domain scoped users are disabled.`) }
+          if (param && api.config['ah-user-simple'].domain.enabled !== true) { throw new Error('Domain scoped users are disabled.') }
         },
         required: false
       },
@@ -37,15 +37,15 @@ exports.UserRegister = class UserRegister extends Action {
           return ('' + param).toLowerCase()
         },
         validator: (param, connection, actionTemplate) => {
-          if (param && api.config['ah-user-simple'].localAuth.register !== true) { throw new Error(`Local registration has been disabled.`) }
-          if (!validator.isEmail(param)) { throw new Error(`Email format is invalid.`) }
+          if (param && api.config['ah-user-simple'].localAuth.register !== true) { throw new Error('Local registration has been disabled.') }
+          if (!validator.isEmail(param)) { throw new Error('Email format is invalid.') }
         },
         required: true
       },
       password: {
         validator: (param, connection, actionTemplate) => {
-          if (param.length < 8) { throw new Error(`Password length too short.`) }
-          if (param.length > 50) { throw new Error(`Password length too long.`) }
+          if (param.length < 8) { throw new Error('Password length too short.') }
+          if (param.length > 50) { throw new Error('Password length too long.') }
         },
         required: true
       }
@@ -101,7 +101,7 @@ exports.UserLogin = class UserLogin extends Action {
           return ('' + param).toLowerCase()
         },
         validator: (param, connection, actionTemplate) => {
-          if (param && api.config['ah-user-simple'].domain.enabled !== true) { throw new Error(`Domain scoped users are disabled.`) }
+          if (param && api.config['ah-user-simple'].domain.enabled !== true) { throw new Error('Domain scoped users are disabled.') }
         },
         required: false
       },
@@ -110,8 +110,8 @@ exports.UserLogin = class UserLogin extends Action {
           return ('' + param).toLowerCase()
         },
         validator: (param, connection, actionTemplate) => {
-          if (param && api.config['ah-user-simple'].localAuth.login !== true) { throw new Error(`Local login has been disabled.`) }
-          if (!validator.isEmail(param)) { throw new Error(`Email format is invalid.`) }
+          if (param && api.config['ah-user-simple'].localAuth.login !== true) { throw new Error('Local login has been disabled.') }
+          if (!validator.isEmail(param)) { throw new Error('Email format is invalid.') }
         },
         required: true
       },

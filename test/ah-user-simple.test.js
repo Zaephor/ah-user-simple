@@ -27,6 +27,8 @@ describe('ah-user-simple', () => {
   }
 
   before(async () => {
+    if (!fs.existsSync('./public')) { fs.mkdirSync('./public') }
+    if (!fs.existsSync('./public/javascript')) { fs.mkdirSync('./public/javascript') }
     api = await actionhero.start({ configChanges })
   })
 
