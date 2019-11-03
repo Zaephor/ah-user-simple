@@ -1,6 +1,6 @@
 'use strict'
 
-exports['default'] = {
+exports.default = {
   'ah-user-simple': (api) => {
     return {
       // domain: domain-scoped authentication
@@ -16,7 +16,7 @@ exports['default'] = {
   }
 }
 
-exports['test'] = {
+exports.test = {
   'ah-user-simple': (api) => {
     return {
       // domain: domain-scoped authentication
