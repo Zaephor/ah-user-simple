@@ -41,11 +41,12 @@ describe('ah-user-simple', () => {
   })
 
   // Generic module loaded check
-  Array('knex', 'objection', 'models', 'auth').forEach(function (attribute) {
+  const scopes = ['knex', 'objection', 'models', 'auth']
+  for (const attribute of scopes) {
     it(attribute + ' should be in api scope', async () => {
       expect(api[attribute]).to.exist
     })
-  })
+  }
 
   it('TODO: should validate the user migrations were loaded/run')
   it('TODO: should validate the user model was loaded')
@@ -66,12 +67,14 @@ describe('ah-user-simple', () => {
     expect(userObject.uuid).to.equal(dummyUser.uuid)
   })
 
-  Array('user:register', 'user:login').forEach(function (attribute) {
+  const actions = ['user:register', 'user:login']
+  for (const attribute of actions) {
     it('TODO: validate that action ' + attribute + ' is functioning')
-  })
-  Array('/user/register', '/user/login').forEach(function (attribute) {
+  }
+  const routes = ['/user/register', '/user/login']
+  for (const attribute of routes) {
     it('TODO: validate that route ' + attribute + ' is functioning')
-  })
+  }
 
   it('TODO: validate that data.auth is false if no session')
   it('TODO: validate that data.auth is contains the user if theres a session')
