@@ -60,7 +60,7 @@
     "mocha": "latest",
     "sqlite3": "^4.1.0",
     "standard": "latest",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   },
   "standard": {
     "ignore": [
